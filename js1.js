@@ -18,7 +18,7 @@ function main(currentTime){
         function close(){
             console.log("hello");
             msg.style.display = "none";
-            window.location = '/'
+            window.location = 'https://rafimoz.github.io/SnakeyBites/?fbclid=IwAR2Csr09g54SoQTbFUUS7H2HUp5Pl0rrY6yHX_l8KqVGZo2DnlO4vDpJWIg'
         }
         return
     }
