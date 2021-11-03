@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 *{
     margin: 0;
 }
@@ -68,6 +69,58 @@ body{
     background-image: url(image/R.png);
     background-size: cover;
 }
+#setting{
+    display: block;
+    padding: 10px;
+    z-index: 1000;
+    position: absolute;
+    background-color: rgba(221, 220, 220, 0.52);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    width: 70%;
+    height: 60vh;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#setting .logo{
+    margin: 30px 0;
+    margin-bottom: 30px;
+    font-size: 2.7rem;
+    font-family: 'Fruktur', cursive;
+    color: rgb(126, 62, 17);
+}
+#play_btn{
+    margin-top: 0.8rem;
+    color:black;
+    transition: 0.2s;
+    font-size: 3rem;
+}
+#play_btn:hover{
+    color: rgb(219, 219, 219);
+}
+#speed_number{
+    width: 35px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 5px;
+    margin: 30px 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#supmit_speed{
+    background-color:tomato;
+    color: white;
+    font-weight: 700;
+    margin: -4.7px;
+    border: transparent;
+    padding: 5px;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+}
+#supmit_speed:hover{
+    background-color: rgb(255, 106, 106);
+}
 
 #win_msg{
     display: none;
@@ -75,7 +128,7 @@ body{
     position:absolute;
     width: 85%;
     height: 85vh;
-    background-color: rgba(0, 0, 0, 0.52);
+    background-color: rgba(221, 220, 220, 0.52);
     border-radius: 10px;
     backdrop-filter: blur(2px);
     color: whitesmoke;
@@ -102,4 +155,41 @@ body{
 }
 #btn:hover i{
     color: cornsilk;
+}
+
+.controller{
+    position:absolute;
+    bottom: 20px;
+}
+.up_btn:nth-child(1){
+    text-align: center;
+}
+.up_btn:nth-child(2){
+    text-align: center;
+}
+.up_btn:nth-child(2) button{
+    margin: 0 20px;
+}
+.up_btn:nth-child(3){
+    text-align: center;
+}
+.up_btn button{
+    font-size: 1rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1.5px solid yellow;
+    color: rgb(0, 0, 0);
+    background-color: rgb(182, 255, 198);
+    border-radius: 50%;
+}
+
+@media screen and (min-width:400px){
+    .controller{
+        display: none;
+    }
+    #setting{
+        height: 70vh;
+    }
 }
