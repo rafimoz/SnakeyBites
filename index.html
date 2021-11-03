@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SNAKEY BITES</title>
     <script src="https://kit.fontawesome.com/5d963fd0ef.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="js1.js" defer type="module"></script>
 </head>
 <body>
     <div id="game-board"></div>
+    <div id="setting">
+        <h1 class="logo">Snakey Bites</h1>
+        <label for="speed_number">Movement Speed</label>
+        <input type="number" value="" min="3" max="12" id="speed_number">
+        <input type="submit" value="GO!" id="supmit_speed">
+        <h1 id="play_btn">Play <i class="fas fa-play"></i></h1>
+    </div>
     <div class="live_score">
         <h1 id="score">0</h1>
     </div>
@@ -19,5 +26,10 @@
         <button id="btn" type="button"><h3>Restart</h3><i class="fas fa-redo-alt"></i></button>
     </div>
     
+    <div class="controller">
+        <div class="up_btn"><button id="up" type="button"><i class="fas fa-arrow-up"></i></button></div>
+        <div class="up_btn"><button id="left" type="button"><i class="fas fa-arrow-left"></i></button><button id="right" type="button"><i class="fas fa-arrow-right"></i></button></div>
+        <div class="up_btn"><button id="down" type="button"><i class="fas fa-arrow-down"></i></button></div>
+    </div>
 </body>
 </html>
