@@ -158,8 +158,9 @@ body{
 }
 
 .controller{
+    display: block;
     position:absolute;
-    bottom: 20px;
+    bottom: 5px;
 }
 .up_btn:nth-child(1){
     text-align: center;
@@ -185,7 +186,7 @@ body{
     border-radius: 50%;
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:510px){
     .controller{
         display: none;
     }
