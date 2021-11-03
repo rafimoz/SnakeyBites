@@ -8,8 +8,6 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0;
     background-color: rgb(24, 24, 24);
 }
 .live_score{
@@ -17,9 +15,10 @@ body{
     font-weight: lighter;
     color: whitesmoke;
     position: fixed;
-    top: 20px;
+    top: 22px;
 }
 #game-board{
+    margin-top: 150px;
     position: relative;
     background: rgb(0, 0, 0);
     width: 90vmin;
@@ -74,6 +73,9 @@ body{
     padding: 10px;
     z-index: 1000;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     background-color: rgba(221, 220, 220, 0.52);
     border-radius: 10px;
     backdrop-filter: blur(8px);
@@ -123,14 +125,18 @@ body{
 }
 
 #win_msg{
+    z-index: 100;
     display: none;
     text-align: center;
     position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 85%;
     height: 85vh;
-    background-color: rgba(221, 220, 220, 0.52);
+    background-color: rgba(39, 37, 37, 0.52);
     border-radius: 10px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
     color: whitesmoke;
 }
 #win_msg h1{
@@ -160,7 +166,7 @@ body{
 .controller{
     display: block;
     position:absolute;
-    bottom: 5px;
+    bottom: 30px;
 }
 .up_btn:nth-child(1){
     text-align: center;
@@ -177,8 +183,8 @@ body{
 .up_btn button{
     font-size: 1rem;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     text-align: center;
     border: 1.5px solid yellow;
     color: rgb(0, 0, 0);
@@ -192,5 +198,11 @@ body{
     }
     #setting{
         height: 70vh;
+    }
+    body{
+        align-items: center;
+    }
+    #game-board{
+        margin: 0;
     }
 }
